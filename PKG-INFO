@@ -1,0 +1,57 @@
+Metadata-Version: 2.4
+Name: memesounds
+Version: 0.1.0
+Summary: Play meme sounds in Python
+Author: k17_editz
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# memesounds
+
+A Python meme soundboard package with WAV and MP3 meme sounds.
+
+Drop new `.wav` or `.mp3` files into `memesounds/assets` and they will show up automatically.
+
+## Python usage
+
+```python
+import memesounds
+
+memesounds.fart()
+memesounds.play_sound("67")
+memesounds.play_sound("wow")
+memesounds.random_sound()
+```
+
+## Command line usage
+
+```powershell
+python -m memesounds --list
+python -m memesounds fart
+python -m memesounds wow
+python -m memesounds --random
+```
+
+After installing in editable mode:
+
+```powershell
+python -m pip install -e .
+memesounds --list
+memesounds fart
+```
+
+## Current included sounds
+
+- `baby`
+- `bone_crack`
+- `fart`
+- `oppa`
+- `siren`
+- `six_seven`
+- `wow`
+
+Any new asset file is available by its filename. For example, `emotional_damage.mp3` becomes:
+
+```python
+memesounds.play_sound("emotional_damage")
+```

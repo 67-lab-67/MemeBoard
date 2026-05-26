@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memesounds"
+version = "0.1.0"
+description = "Play meme sounds in Python"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "k17_editz"}
+]
+
+[tool.setuptools]
+packages = ["memesounds"]
+
+[tool.setuptools.package-data]
+memesounds = ["assets/*.wav"]
+
+[project.scripts]
+memesounds = "memesounds.sounds:main"

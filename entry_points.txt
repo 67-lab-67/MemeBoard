@@ -1,0 +1,2 @@
+[console_scripts]
+memesounds = memesounds.sounds:main
